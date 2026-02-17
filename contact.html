@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>contact</title>
-		<script type="module" crossorigin="" src="./js/contact.min.js?v=1771271409747"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1771271409747">
-		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1771271409747">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1771271409747">
-		<link rel="stylesheet" crossorigin="" href="./css/contact.min.css?v=1771271409747">
+		<script type="module" crossorigin="" src="./js/contact.min.js?v=1771368011580"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1771368011580">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1771368011580">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1771368011580">
+		<link rel="stylesheet" crossorigin="" href="./css/contact.min.css?v=1771368011580">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -87,30 +87,38 @@
 							<div class="contacts__form form-contacts">
 								<h4 class="form-contacts__title">Get in Touch</h4>
 								<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail/index.php" class="form-contacts__form">
-									<label data-fls-label="" for="name">
-										First Name
-										<span>*</span>
-									</label>
-									<input data-fls-input="" id="name" type="text" name="form[name]" required data-fls-form-errtext="Error" autocomplete="off" class="input">
-									<label data-fls-label="" for="surname">
-										Last Name
-										<span>*</span>
-									</label>
-									<input data-fls-input="" id="surname" type="text" name="form[surname]" required data-fls-form-errtext="Error" class="input">
-									<label data-fls-label="" for="email">
-										Email
-										<span>*</span>
-									</label>
-									<input data-fls-input="" id="email" type="email" name="form[email]" required data-fls-form-errtext="Error" autocomplete="off" class="input">
+									<div class="form-contacts__line">
+										<label data-fls-label="" for="name">
+											First Name
+											<span>*</span>
+										</label>
+										<input data-fls-input="" id="name" type="text" name="form[name]" required data-fls-form-errtext="First Name Error" autocomplete="off" class="form-contacts__input">
+									</div>
+									<div class="form-contacts__line">
+										<label data-fls-label="" for="surname">
+											Last Name
+											<span>*</span>
+										</label>
+										<input data-fls-input="" id="surname" type="text" name="form[surname]" required data-fls-form-errtext="Last Name Error" class="form-contacts__input">
+									</div>
+									<div class="form-contacts__line">
+										<label data-fls-label="" for="email">
+											Email
+											<span>*</span>
+										</label>
+										<input data-fls-input="" id="email" type="email" name="form[email]" required data-fls-form-errtext="Email Error" autocomplete="off" class="form-contacts__input">
+									</div>
 									<label data-fls-label="" for="company">Company</label>
-									<input data-fls-input="" id="company" type="text" name="form[company]" data-fls-form-errtext="Error" autocomplete="off" class="input">
+									<input data-fls-input="" id="company" type="text" name="form[company]" autocomplete="off" class="form-contacts__input">
 									<label data-fls-label="" for="job">Job Title</label>
-									<input data-fls-input="" id="job" type="text" name="form[job]" data-fls-form-errtext="Error" autocomplete="off" class="input">
-									<label data-fls-label="" for="challenge">
-										Describe your challenge
-										<span>*</span>
-									</label>
-									<textarea id="challenge" required name="form[challenge]" data-fls-form-errtext="Error" class="input"></textarea>
+									<input data-fls-input="" id="job" type="text" name="form[job]" autocomplete="off" class="form-contacts__input">
+									<div class="form-contacts__line">
+										<label data-fls-label="" for="challenge">
+											Describe your challenge
+											<span>*</span>
+										</label>
+										<textarea id="challenge" required name="form[challenge]" data-fls-input="" data-fls-input-autoheight="" data-fls-form-errtext="Challenge Error" class="form-contacts__input form-contacts__input"></textarea>
+									</div>
 									<button type="submit" data-fls-button="" class="form-contacts__button button button--dark">Send Message</button>
 								</form>
 							</div>
@@ -230,6 +238,22 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div data-fls-popup="popup" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__text">
+						<p class="popup__title">Thank you for contacting us!</p>
+						<p class="popup__subtitle">We will get back to you as soon as possible.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

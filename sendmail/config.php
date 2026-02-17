@@ -16,8 +16,8 @@ $mail->IsHTML(true);
 $mail->isSMTP(); // Send using SMTP
 $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = ''; // SMTP username (email)
-$mail->Password = ''; // SMTP password (Google Account -> Security -> App passwords -> Add)
+$mail->Username = 'mike.devasy@gmail.com'; // SMTP username (email)
+$mail->Password = 'sczc zkfe mzsd cooy'; // SMTP password (Google Account -> Security -> App passwords -> Add)
 
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port = 465;

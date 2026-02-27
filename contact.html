@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.png">
 		<title>contact</title>
-		<script type="module" crossorigin="" src="./js/contact.min.js?v=1771371674687"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1771371674687">
-		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1771371674687">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1771371674687">
-		<link rel="stylesheet" crossorigin="" href="./css/contact.min.css?v=1771371674687">
+		<script type="module" crossorigin="" src="./js/contact.min.js?v=1772234643629"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1772234643629">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1772234643629">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1772234643629">
+		<link rel="stylesheet" crossorigin="" href="./css/contact.min.css?v=1772234643629">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -17,7 +17,10 @@
 				<div class="header__container">
 					<div class="header__logo">
 						<a href="index.html" class="header__logo-link">
-							<img src="./assets/img/Logo.svg%20fill.svg" alt="Logo" class="header__logo-image">
+							<picture>
+								<img style="width:80px; height: 80px;" alt="Logo" class="header__logo-image" src="./assets/img/hero/logo_1.webp">
+							</picture>
+							<span>LyoPro</span>
 						</a>
 						<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"contact"}'></include> -->
 					</div>
@@ -129,91 +132,101 @@
 			<!-- @format -->
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
-					<div class="footer__body body-footer">
-						<div class="body-footer__content">
-							<div data-fls-spollers="580" class="body-footer__menus">
-								<div class="body-footer__column">
-									<figure class="body-footer__picture">
-										<img src="./assets/img/footer/footer-logo.svg" alt="footer-logo" class="body-footer__image">
-									</figure>
-									<a class="body-footer__email" href="mailto:contact@lyopro.com">contact@lyopro.com</a>
-								</div>
-								<details class="body-footer__menu">
-									<summary>
-										<h5 class="body-footer__title">Company</h5>
-									</summary>
-									<ul class="body-footer__list">
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Services</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Case studies</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">About us</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Careers</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Events</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Mulesoft Consulting Package</a>
-										</li>
-									</ul>
-								</details>
-								<details class="body-footer__menu">
-									<summary>
-										<h5 class="body-footer__title">Services</h5>
-									</summary>
-									<ul class="body-footer__list">
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Contact</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">Application</a>
-										</li>
-										<li class="body-footer__item">
-											<a href="#" class="body-footer__link">FQA Features</a>
-										</li>
-									</ul>
-								</details>
-								<details class="body-footer__menu">
-									<summary>
-										<h5 class="body-footer__title">Get in touch</h5>
-									</summary>
-									<ul class="body-footer__list">
-										<li class="body-footer__item">
-											<p>Business Center 1, M Floor,</p>
-											<p>Meydan, Nad Al Sheba, Dubai,</p>
-											<p>United Arab Emirates</p>
-											<a href="tel:+971501234567" class="body-footer__link">+971 50 123 4567</a>
-										</li>
-										<li class="body-footer__item">
-											<p>Business Center 1, M Floor,</p>
-											<p>Meydan, Nad Al Sheba, Dubai,</p>
-											<p>United Arab Emirates</p>
-											<a href="tel:+971501234567" class="body-footer__link">+971 50 123 4567</a>
-										</li>
-										<li class="body-footer__item">
-											<p>Business Center 1, M Floor,</p>
-											<p>Meydan, Nad Al Sheba, Dubai,</p>
-											<p>United Arab Emirates</p>
-											<a href="tel:+971501234567" class="body-footer__link">+971 50 123 4567</a>
-										</li>
-										<li class="body-footer__item">
-											<p>Business Center 1, M Floor,</p>
-											<p>Meydan, Nad Al Sheba, Dubai,</p>
-											<p>United Arab Emirates</p>
-										</li>
-									</ul>
-								</details>
-							</div>
-						</div>
-					</div>
+					<!--
+<div class="footer__body body-footer">
+<div class="body-footer__content">
+<div data-fls-spollers="580" class="body-footer__menus">
+<div class="body-footer__column">
+<figure class="body-footer__picture">
+<img
+src="@img/logo-cologne-transp-blue.svg"
+alt="footer-logo"
+class="body-footer__image"
+/>
+</figure>
+<a class="body-footer__email" href="mailto:contact@lyopro.com"
+>contact@lyopro.com</a
+>
+</div>
+<details class="body-footer__menu">
+<summary><h5 class="body-footer__title">Company</h5></summary>
+<ul class="body-footer__list">
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">Services</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">Case studies</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">About us</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">Careers</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">Events</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link"
+>Mulesoft Consulting Package</a
+>
+</li>
+</ul>
+</details>
+<details class="body-footer__menu">
+<summary><h5 class="body-footer__title">Services</h5></summary>
+<ul class="body-footer__list">
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">Contact</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">Application</a>
+</li>
+<li class="body-footer__item">
+<a href="#" class="body-footer__link">FQA Features</a>
+</li>
+</ul>
+</details>
+<details class="body-footer__menu">
+<summary><h5 class="body-footer__title">Get in touch</h5></summary>
+<ul class="body-footer__list">
+<li class="body-footer__item">
+<p>Business Center 1, M Floor,</p>
+<p>Meydan, Nad Al Sheba, Dubai,</p>
+<p>United Arab Emirates</p>
+<a href="tel:+971501234567" class="body-footer__link"
+>+971 50 123 4567</a
+>
+</li>
+<li class="body-footer__item">
+<p>Business Center 1, M Floor,</p>
+<p>Meydan, Nad Al Sheba, Dubai,</p>
+<p>United Arab Emirates</p>
+<a href="tel:+971501234567" class="body-footer__link"
+>+971 50 123 4567</a
+>
+</li>
+<li class="body-footer__item">
+<p>Business Center 1, M Floor,</p>
+<p>Meydan, Nad Al Sheba, Dubai,</p>
+<p>United Arab Emirates</p>
+<a href="tel:+971501234567" class="body-footer__link"
+>+971 50 123 4567</a
+>
+</li>
+<li class="body-footer__item">
+<p>Business Center 1, M Floor,</p>
+<p>Meydan, Nad Al Sheba, Dubai,</p>
+<p>United Arab Emirates</p>
+</li>
+</ul>
+</details>
+</div>
+</div>
+</div>
+-->
 					<div class="footer__bottom bottom-footer">
-						<h5>Copyright © 2026 | Leadex Systems</h5>
+						<h5>Copyright © 2026 | LyoPro Tech</h5>
 						<div class="bottom-footer__links">
 							<a href="#" class="bottom-footer__link">GDPR compliance</a>
 							<a href="#" class="bottom-footer__link">Cookies Policy</a>

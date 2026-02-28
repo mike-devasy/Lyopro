@@ -187,12 +187,16 @@ body {
   display: flex;
   align-items: center;
 }
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
 .header__logo-link span {
   font-family: serif;
   font-size: 1.875rem;
   font-weight: 700;
-  margin-left: 0.3125rem;
-  color: aliceblue;
+  color: #ffffff;
 }
 .header__logo-image {
   border-radius: 50%;
@@ -348,6 +352,10 @@ body {
     flex-wrap: wrap;
     gap: 0.9375rem;
   }
+}@media (max-width: 47.99875em){
+  [data-fls-title] {
+    font-size: 1.875rem;
+  }
 }@media (max-width: 31.25em){
   .socials-footer {
     margin-top: 0rem;
@@ -363,6 +371,9 @@ body {
     height: auto;
     aspect-ratio: 1.5/1;
   }
+  .header__logo-link span {
+    font-size: 1.375rem;
+  }
   .header__button {
     padding: 0.4375rem 1.875rem !important;
   }
@@ -376,7 +387,16 @@ body {
   }
 }@media (width <= 20em){
   [data-fls-title] {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
+  }
+  .header__container {
+    max-height: 5rem;
+  }
+  .header__logo-image {
+    width: 3.125rem;
+  }
+  .header__logo-image {
+    height: 3.125rem;
   }
   .footer {
     padding-top: 1.875rem;
@@ -398,7 +418,16 @@ body {
   }
 }@media (width > 20em) and (width <= 91.875em){
   [data-fls-title] {
-    font-size: clamp( 1.875rem , 1.52717391304375rem  +  1.7391304348vw , 3.125rem );
+    font-size: clamp( 1.25rem , 0.7282608695625rem  +  2.6086956522vw , 3.125rem );
+  }
+  .header__container {
+    max-height: clamp( 5rem , 4.408695652175rem  +  2.9565217391vw , 7.125rem );
+  }
+  .header__logo-image {
+    width: clamp( 3.125rem , 2.6032608695625rem  +  2.6086956522vw , 5rem );
+  }
+  .header__logo-image {
+    height: clamp( 3.125rem , 2.6032608695625rem  +  2.6086956522vw , 5rem );
   }
   .footer {
     padding-top: clamp( 1.875rem , 1.1793478260875rem  +  3.4782608696vw , 4.375rem );
@@ -434,6 +463,15 @@ body {
 }@media (width > 91.875em){
   [data-fls-title] {
     font-size: 3.125rem;
+  }
+  .header__container {
+    max-height: 7.125rem;
+  }
+  .header__logo-image {
+    width: 5rem;
+  }
+  .header__logo-image {
+    height: 5rem;
   }
   .footer {
     padding-top: 4.375rem;

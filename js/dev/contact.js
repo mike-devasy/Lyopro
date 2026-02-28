@@ -1,5 +1,5 @@
 import "./main.min.js";
-import { c as bodyLock, e as bodyUnlock, f as bodyLockStatus, h as gotoBlock } from "./common.min.js";
+import { e as bodyLock, f as bodyUnlock, h as bodyLockStatus, i as gotoBlock } from "./common.min.js";
 class Popup {
   constructor(options) {
     let config = {

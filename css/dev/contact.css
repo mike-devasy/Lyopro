@@ -223,6 +223,9 @@ body::after {
   .body-contacts__link {
     font-size: 0.875rem;
   }
+  .form-contacts {
+    flex: 0 1 100%;
+  }
 }
 
 @media (width <= 20em) {

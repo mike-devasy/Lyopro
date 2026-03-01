@@ -1,3 +1,12 @@
+function addLoadedAttr() {
+  if (!document.documentElement.hasAttribute("data-fls-preloader-loading")) {
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.documentElement.setAttribute("data-fls-loaded", "");
+      }, 0);
+    });
+  }
+}
 function getHash() {
   if (location.hash) {
     return location.hash.replace("#", "");
@@ -166,6 +175,7 @@ const gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) =>
     });
   }
 };
+addLoadedAttr();
 export {
   setHash as a,
   slideUp as b,

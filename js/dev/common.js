@@ -7,15 +7,6 @@ function addLoadedAttr() {
     });
   }
 }
-function getHash() {
-  if (location.hash) {
-    return location.hash.replace("#", "");
-  }
-}
-function setHash(hash) {
-  hash = hash ? `#${hash}` : window.location.href.split("#")[0];
-  history.pushState("", "", hash);
-}
 let slideUp = (target, duration = 500, showmore = 0) => {
   if (!target.classList.contains("--slide")) {
     target.classList.add("--slide");
@@ -177,16 +168,13 @@ const gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) =>
 };
 addLoadedAttr();
 export {
-  setHash as a,
-  slideUp as b,
-  getDigFormat as c,
-  dataMediaQueries as d,
-  bodyLock as e,
-  bodyUnlock as f,
-  getHash as g,
-  bodyLockStatus as h,
-  gotoBlock as i,
-  slideToggle as j,
-  slideDown as s,
+  bodyUnlock as a,
+  bodyLock as b,
+  bodyLockStatus as c,
+  gotoBlock as d,
+  dataMediaQueries as e,
+  slideUp as f,
+  getDigFormat as g,
+  slideToggle as s,
   uniqArray as u
 };

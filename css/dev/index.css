@@ -44,6 +44,7 @@
 .benefits-hero__items {
   display: flex;
 }
+
 .item-hero__value {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
@@ -65,7 +66,8 @@
 }
 .actions__title {
   max-width: 38.75rem;
-  font-size: 1.625rem;
+}
+.actions__title {
   line-height: 1.2;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
@@ -109,6 +111,9 @@
   .item-hero__value {
     font-size: 1.6875rem;
   }
+  .actions__title {
+    font-size: 1.125rem;
+  }
 }
 @media (width > 20em) and (width <= 91.875em) {
   .page__hero {
@@ -128,6 +133,9 @@
   }
   .item-hero__value {
     font-size: clamp( 1.6875rem , 1.2875rem  +  2vw , 3.125rem );
+  }
+  .actions__title {
+    font-size: clamp( 1.125rem , 0.98586956521875rem  +  0.6956521739vw , 1.625rem );
   }
 }
 @media (width > 48.0625em) and (width <= 91.875em) {
@@ -156,5 +164,8 @@
   }
   .item-hero__value {
     font-size: 3.125rem;
+  }
+  .actions__title {
+    font-size: 1.625rem;
   }
 }
